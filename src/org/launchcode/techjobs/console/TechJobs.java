@@ -64,7 +64,7 @@ public class TechJobs {
                 String searchTerm = in.nextLine();
 
                 if (searchField.equals("all")) {
-                    printJobs(JobData.findByColumnAndValue(searchField, searchTerm));
+                    JobData.findByValue(searchTerm);
                 } else if(searchField.equals("value")){
                     JobData.findByValue(searchTerm);
                 }   else {
